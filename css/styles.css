@@ -1,0 +1,17 @@
+
+body{
+    color: #222222;
+}
+
+a{
+color: #222222;
+}
+.container{
+    @media (width>=96rem){
+    max: width 1200px;}
+}
+.flexc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

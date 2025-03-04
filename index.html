@@ -10,12 +10,11 @@
 <body>
     <div class="bg-[#E6FAF5] py-2 flex items-center px-6 justify-end hidden lg:flex ">
         <div class="flex items-center gap-x-4 pr-20"> 
-            <a href="#" class="flex gap-x-3 "><img src="./assets/images/phone.svg" alt="">Download App</a>
-            <a href="#">Blog</a>
-            <a href="#" class="flex gap-x-3 justify-center ">Language : English<img src="./assets/images/dropdown.svg" alt=""></a>
+            <a href="#" class="flex gap-x-3 font-bold "><img src="./assets/images/phone.svg" alt="">Download App</a>
+            <a href="#" class="font-bold">Blog</a>
+            <a href="#" class="flex gap-x-3 justify-center ">Language : <span class="font-bold flex gap-x-2.5">English<img src="./assets/images/dropdown.svg" alt=""></span></a>
         </div>
     </div>
-   
         <div class="flex items-center justify-between gap-x-4 pr-20 ml-[102px] lg:hidden"> 
             <a href="#" class="flex">9:41</a>
             <div class="flex mt-2 mr-[20px]">
@@ -24,32 +23,50 @@
             <a href="#"><img src="./assets/images/icons8-battery-50.png" alt="" class=" w-[24px] h-[24px]"></a>
         </div>
         </div>
-    
-    <header class="container my-7 flex mx-auto justify-between items-center">
-    <a href="http://"><img src="./assets/images/logo.svg" alt=""></a>
-    <div class="flex gap-x-6 hidden items-center lg:flex">
-        <div class="flex gap-x-3 items-center bg-[#F5F5F5] h-10 px-4">
-            <img src="./assets/images/search.svg" alt="">
-            <input type="search"
-            placeholder="Search all mutal funds"
-            class="text-sm outline-none">
+
+    <header class="container md:flex-col my-7 mx-auto flex lg:flex-row items-center justify-between">
+        <div class="flex flex-row justify-end">
+        <a href="http://"><img src="./assets/images/logo.svg" alt=""></a>
+        <div class="flex flex-col gap-y-1 cursor-pointer lg:hidden">
+            <span class="w-7 h-1 bg-[#222222]"></span>
+            <span class="w-7 h-1 bg-[#222222]"></span>
+            <span class="w-7 h-1 bg-[#222222]"></span>
         </div>
-        <nav>
-            <ul class="flex items-center  gap-x-6">
-                <li><a href="http://">Learn with Fund Guru</a></li>
-                <li><a href="http://">Explore Funds</a></li>
-                <li><a href="http://">Ask the Expert</a></li>
-                <li ><a href="http://" class="font-bold">Login/Register</a></li>
-            </ul>
-        </nav>
-        
     </div>
-    <div class=" flex flex-col gap-y-1 cursor-pointer lg:hidden p-4">
-        <span class="w-7 h-1 bg-[#222222]"></span>
-        <span class="w-7 h-1 bg-[#222222]"></span>
-        <span class="w-7 h-1 bg-[#222222]"></span>
-    </div>
+        <!-- Desktop View: Search Bar and Navbar in a Single Row -->
+        <div class="hidden lg:flex flex-1 items-center justify-center gap-x-6">
+            <div class="flex gap-x-3 items-center bg-[#F5F5F5] h-10 px-4 ">
+                <img src="./assets/images/search.svg" alt="">
+                <input type="search"
+                    placeholder="Search all mutual funds"
+                    class="text-sm outline-none w-full">
+            </div>
+    
+            <nav class="hidden lg:flex">
+                <ul class="flex items-center gap-x-6">
+                    <li><a href="http://">Learn with Fund Guru</a></li>
+                    <li><a href="http://">Explore Funds</a></li>
+                    <li><a href="http://">Ask the Expert</a></li>
+                    <li><a href="http://" class="font-bold">Login/Register</a></li>
+                </ul>
+            </nav>
+        </div>
+
+       
+        <div class="w-[643px]  lg:hidden h-10 bg-gradient-to-b from-gray-100 to-white mb-[-90px]"></div>
+        <!-- Mobile View: Search Bar Below -->
+        <div class="lg:hidden w-[577px] mt-[92px]">
+            <div class="flex gap-x-3 items-center bg-[#F5F5F5] h-10 px-4 w-full">
+                <img src="./assets/images/search.svg" alt="">
+                <input type="search"
+                    placeholder="Search all mutual funds"
+                    class="text-sm outline-none w-full">
+            </div>
+        </div>
     </header>
+    
+    
+        
 <!-- part-1 -->
 <section>
     <div class=" container my-10 mx-auto flex items-center justify-between">
@@ -239,7 +256,7 @@
         </div>
     </div>
 
-    <div class="mt-10 pt-4 flex justify-between border-t border-gray-200 px-12 text-gray-500 text-sm">
+    <div class="mt-10 pt-4 flex justify-between border-t border-gray-200 px-12 text-gray-500 text-sm mb-5">
         <p>Copyright 2019 Mutual Funds. All rights reserved.</p>
         <div class="flex gap-4 mr-[194px]">
             <img src="./assets/images/social 1.svg" alt="Facebook">

@@ -3,212 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAILWIND CSS</title>
     <link href="./css/output.css" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Tailwind css</title>
 </head>
-<body>
-    <div class="container bg-[#E6FAF5] py-2 flex items-center px-6 justify-end hidden mx-auto lg:flex ">
-        <div class="flex items-center gap-x-4 pr-3"> 
-            <a href="#" class="flex gap-x-3 font-bold "><img src="./assets/images/phone.svg" alt="">Download App</a>
-            <a href="#" class="font-bold">Blog</a>
-            <a href="#" class="flex gap-x-3 justify-center ">Language : <span class="font-bold flex items-center gap-x-2.5">English<img src="./assets/images/dropdown.svg" alt=""></span></a>
-        </div>
-    </div>
-        <div class=" container1 mx-auto flex items-center justify-between gap-x-4 pr-20 ml-[102px] lg:hidden"> 
-            <a href="#" class="flex">9:41</a>
-            <div class="flex mt-2 mr-[20px] gap-2">
-            <a href="#"><img src="./assets/images/icons8-signal-24.png" alt=""></a>
-            <a href="#"><img src="./assets/images/icons8-wifi-30.png" alt="" class=" w-[24px] h-[24px]"></a>
-            <a href="#"><img src="./assets/images/icons8-battery-50.png" alt="" class=" w-[24px] h-[24px]"></a>
-        </div>
-        </div>
-
-    <header class="container md:flex-col my-7 mx-auto flex lg:flex-row items-center justify-between">
-        <div class="flex flex-row justify-end container1">
-        <a href="http://" class="ml-[149px]"><img src="./assets/images/logo.svg" alt=""></a>
-        <div class="flex flex-col gap-y-1 cursor-pointer lg:hidden">
-            <span class="w-7 h-1 bg-[#222222]"></span>
-            <span class="w-7 h-1 bg-[#222222]"></span>
-            <span class="w-7 h-1 bg-[#222222]"></span>
-        </div>
-    </div>
-    
-        <div class="hidden lg:flex flex-1 items-center justify-end gap-x-6">
-            <div class="flex gap-x-3 items-center bg-[#F5F5F5] h-10 px-4 ">
-                <img src="./assets/images/search.svg" alt="">
-                <input type="search"
-                    placeholder="Search all mutual funds"
-                    class="text-sm outline-none w-full">
+<body class="max-w-[1850px]">
+    <div class="container mx-auto bg-[#E4FAF4] py-2 justify-end items-center px-6 hidden lg:flex">
+        <div class="flex items-center gap-x-4 pr-[25px] mr-[80px]">
+            <div class="flex items-center gap-2">
+                <img src="./assets/images/phone.svg" alt="phone img">
+                <a href="#">Download App</a>
             </div>
-    
-            <nav class="hidden lg:flex">
-                <ul class="flex items-center gap-x-6">
-                    <li><a href="http://">Learn with Fund Guru</a></li>
-                    <li><a href="http://">Explore Funds</a></li>
-                    <li><a href="http://">Ask the Expert</a></li>
-                    <li><a href="http://" class="font-bold">Login/Register</a></li>
+            <a href="#">Blog</a>
+            <div class="flex items-center gap-2">
+                <a href="#">English</a>
+                <img src="./assets/images/dropdown.svg" alt="phone img">
+            </div>
+        </div>
+    </div>
+
+    <header class="max-w-[1850px] mx-auto my-7 flex justify-around items-center">
+        <div>
+            <img src="./assets/images/logo.svg" alt="logo img" class=" pl-[3px]">
+        </div>
+        <div class="items-center lg:flex">
+            <div class="hidden lg:flex items-center bg-[#F5F5F5] h-10 w-[240px] px-4 gap-x-3 mr-7">
+                <img src="./assets/images/search.svg"alt="seacrh img">
+                <input
+                type="search"
+                class="bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400 w-full ml-2"
+                placeholder="Search all mutual funds"/>
+            </div>
+            <nav>
+                <ul class="hidden lg:flex items-center gap-x-6 mr-[95px]">
+                    <li><a href="">Learn with Fund Guru</a></li>
+                    <li><a href="">Explore Funds</a></li>
+                    <li><a href="">Ask the Expert</a></li>
+                    <li><a href=""class="font-bold">Login/Register</a></li>
                 </ul>
             </nav>
         </div>
-
-        <!-- <div class="w-[643px]  lg:hidden h-10 bg-gradient-to-b from-gray-100 to-white mb-[-90px]"></div> -->
-       
-        <div class="lg:hidden w-[577px] mt-[92px] container1 mx-auto shadow-[0_-10px_10px_-5px_rgba(128,128,128,0.3)]">
-            <div class="flex gap-x-3 items-center bg-[#F5F5F5] h-10 px-4 w-full">
-                <img src="./assets/images/search.svg" alt="">
-                <input type="search"
-                    placeholder="Search all mutual funds"
-                    class="text-sm outline-none w-full">
-            </div>
-        </div>
+        <div class="flex flex-col gap-y-1 cursor-pointer pr-[20px] lg:hidden">
+        <span class="w-7 h-1 bg-[#222222]"></span>
+        <span class="w-7 h-1 bg-[#222222]"></span>
+        <span class="w-7 h-1 bg-[#222222]"></span>
+        </div>  
     </header>
+    <div class="mx-auto w-full max-w-sm p-5 bg-gradient-to-b from-gray-100 to-white lg:hidden">
+        <div class="flex items-center bg-[#F5F5F5] h-12 px-4 gap-x-3 rounded-lg w-full shadow-sm">
+            <img src="./assets/images/search.svg" alt="search icon" class="w-5 h-5 opacity-60">
+            <input
+                type="search"
+                class="bg-transparent outline-none text-sm text-gray-500 placeholder-gray-400 w-full"
+                placeholder="Search all mutual funds"/>
+        </div>
+    </div>
     
     
-        
-<!-- part-1 -->
-<section>
-    <div class=" container my-10 mx-auto flex items-center justify-between">
-        <div class="ml-[151px]">
-        <h1 class="text-[40px] max-w-96 mb-3.5">
-            Investing made
-            <span class="relative">
-                <span class="absolute w-full h-2.5 bg-[#9cecd7] left-0 bottom-0"></span>
-                <span class="relative z-10 font-bold">Easy</span>
-            </span>
-             for you
+    <!--hero-->
+    <section class="container mx-auto pl-[20px] my-10 flex items-center justify-between gap-[377px]">
+        <div class="mx-auto">
+        <h1 class="lg:text-[40px] lg:max-w-96 mb-3.5 text-[32px] w-[330px]">
+        Investing made
+        <span class="relative">
+            <span
+               class="absolute w-full h-2.5 bg-[#E4FAF4] left-0 bottom-0" >
+           </span>
+           <span class="relative z-10">Easy</span>
+        </span>
+        for you
         </h1>
-
-        
-        <p class="max-w-89 text-gray-700 leading-7">
-            India’s fastest growing investment platform with  <span class="font-bold">20 Lac+ users</span>. 
-            We use edge-cutting technology to ensure that your personal information is fully encrypted and securely stored.
+        <p class="max-w-96 text-[17px] text-justify">
+            India's fastest growing investment platform with <strong>20 Lac+ users</strong>. We use edge-cutting technology to ensure that your personal information is fully encrypted and securely stored.
         </p>
-        <button class="bg-[#00D09C] text-white px-8  py-4 rounded mt-10 mr-56 cursor-pointer">Get Started Now</button>
-    </div>
-        <div class="hidden lg:block">
-            <img src="./assets/images/banner1.jpg" alt="">
-        </div>
-    </div>
-</section>
-
-<!-- part2 -->
-<section >
-<div class="bg-[#E4FAF4] container mx-auto py-10 px-6 lg:px-16 flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
-    <div class="ml-[154px] flex flex-col justify-center max-sm:mx-auto mt-9">
-       <h1 class="text-3xl font-bold mb-3.5 items-center"> Trusted by Millions of People</h1>
-       <p class="w-[504px]">We are registered as a distributor with AMFI, as an investment advisor with SEBI and platform partners with BSE.</p>
-    </div>
-    <div class="flex justify-center mt-9 gap-x-11 ml-[-309px] md:ml-[17px] items-center">
-        <div class="flex flex-col items-center p-4 rounded-md border border-[#00D09C]/20 bg-[#EFFFFA]">
-            <img src="./assets/images/Investing1.svg" alt="">
-            <p class="text-gray-700 mt-2">ATR-823742</p>
-        </div>
-        <div class="flex flex-col items-center p-4 rounded-md border border-[#00D09C]/20 bg-[#EFFFFA]">
-            <img src="./assets/images/Investing2.svg" alt="">
-            <p class="text-gray-700 mt-2">INA2000382</p>
-        </div>
-        <div class="flex flex-col items-center p-4 rounded-md border border-[#00D09C]/20 bg-[#EFFFFA]">
-            <img src="./assets/images/Investing3.svg" alt="">
-            <p class="text-gray-700 mt-2">M.Code 2384</p>
-        </div>
-    </div>    
-
-</div>
-</section>
-
-
-
-<!-- part3 -->
-<section>
-    <div class="container my-10 mx-auto flex justify-center  items-center">
-      
-        <div>
-            <img src="./assets/images/Fund.svg" alt="Fund Guru Illustration" class="w-2xl h-[470px] ml-[-100px]">
+        <button class="bg-[#00D09C] mt-10 flexc px-8 py-4 text-white rounded ">Get Started Now</button>
         </div>
         <div>
-            <h5 class="text-gray-500 text-sm">About mutal funds</h5>
-            <h1 class="text-4xl font-bold mb-8">Learn with Fund Guru</h1>
-            <ul class="flex flex-col space-y-3 mt-4">
-                <li><a href="#" class="flex gap-x-3 items-center"><img src="./assets/images/ok.svg" alt="">Mutual Funds – Introduction and Working</a></li>
-                <li><a href="#" class="flex gap-x-3 items-center"><img src="./assets/images/ok.svg" alt="">Benefits of Investing in Mutual Funds</a></li>
-                <li><a href="#" class="flex gap-x-3 items-center"><img src="./assets/images/ok.svg" alt="">Mutual Fund Schemes and Types</a></li>
-                <li><a href="#" class="flex gap-x-3 items-center"><img src="./assets/images/ok.svg" alt="">Ways to Choose Mutual Fund Schemes</a></li>
-                <li><a href="#" class="flex gap-x-3 items-center"><img src="./assets/images/ok.svg" alt="">Offer Documents and Statements</a></li>
-                <li><a href="#" class="flex gap-x-3 items-center"><img src="./assets/images/ok.svg" alt="">Transactions in Mutual Funds</a></li>
-            </ul>
-
-          
-            <div class="flex items-center gap-x-4 mt-6">
-                <button class="bg-[#00D09C] text-white py-3 px-6 rounded cursor-pointer text-sm">Know More</button>
-                <button class="flex items-center gap-x-2 bg-white text-[#00D09C]    py-3 px-6 rounded cursor-pointer text-sm">
-                    Watch Video <img src="./assets/images/play.svg" alt="">
-                </button>
+        <img src="./assets/images/banner1.jpg"alt="banner"class="hidden lg:block pr-[126px]"/>
+        </div>
+    </section>
+    <!--new section-->
+    <section>
+        <div class="max-w-[1850px] mx-auto flex flex-col justify-center pl-[20px] bg-[#E4FAF4] px-[30px] items-center lg:gap-[395px] lg:flex-row">
+         <div class="py-4 pl-[27px]">
+                <h1 class="text-[30px] mt-2 mb-2.5 py-2 font-bold">
+                Trusted by Millions of People</h1>
+                <p class="max-w-[504px] text-[17px]">
+                    We are registered as a distributor with AMFI, as an investment advisor with SEBI and platform partners with BSE.
+                </p>
+         </div>
+        <div class="flex  lg:mt-9 mt-[20px] lg:gap-[20px] gap-[9px] mb-10 ml-0 items-center lg:p-[46px] ">
+            <div class="flex flex-col items-center p-4 rounded-md border border-[#00D09C]/20 bg-transparent lg:w-[110px] lg:h-[110px]">
+              <img src="./assets/images/Investing1.svg" alt="in1">
+              <p class="text-[14px] text-gray-700 mt-2">ATR-823742</p>
+            </div> 
+            <div class="flex flex-col items-center p-4 rounded-md border border-[#00D09C]/20 bg-transparent lg:w-[110px] lg:h-[110px]">
+             <img src="./assets/images/Investing2.svg" alt="in2">
+             <p class="text-[14px] text-gray-700 mt-2">INA2000382</p>
+            </div>
+            <div class="flex flex-col items-center p-4 rounded-md border border-[#00D09C]/20 bg-transparent lg:w-[110px] lg:h-[110px]">
+             <img src="./assets/images/Investing3.svg" alt="in3">
+             <p class="text-[12px] text-gray-700 mt-2 ">M.Code 2384</p>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- part4 -->
-<section class=" container mx-auto flex items-center justify-center" style="background: linear-gradient(to bottom, #E4FAF4, #FFFFFF);">
-    <div class="container mx-auto mt-[62px] flex items-center justify-between px-12 gap-[325px] ">
-        <div class="w-full py-12 px-6 ">
-            <div class="max-w-4xl mx-auto">
-                <h1 class="text-4xl font-bold">Ask the Expert</h1>
-                <p class="text-gray-600 text-lg mt-2">You can schedule a meeting with an expense manager</p>
-        
-                <div class="flex mt-9 gap-16 "> 
-                  
-                    <div class="flex flex-col text-left w-[260px] items-start">
-                        <img src="./assets/images/cash.svg" alt="Cash Icon">
-                        <h2 class="text-2xl font-bold mt-4">Investing made easy</h2>
-                        <p class="text-gray-600 mt-3">
-                            Three simple options - cautious, balanced, adventurous. Expert will take care of the rest!
-                        </p>
-                        <button class="bg-[#00D09C] text-white py-3 px-6 rounded mt-6 cursor-pointer text-sm">Invest Now</button>
-                    </div>
-        
-                    
-                    <div class="flex flex-col text-left w-[260px] items-start">
-                        <img src="./assets/images/Schedule.svg" alt="Schedule Icon">
-                        <h2 class="text-2xl font-bold mt-4">Schedule a meeting</h2>
-                        <p class="text-gray-600 mt-3">
-                            Expert will give you the best advice. Schedule a meeting with the expert to know mutual funds better.
-                        </p>
-                        <button class="bg-[#00D09C] text-white py-3 px-6 rounded mt-7 cursor-pointer text-sm">Schedule Now</button>
-                    </div>
+        </div>
+    </section>
+    <section class="container mx-auto">
+        <div class="flex flex-col px-[30px] py-[50px] gap-[50px] lg:flex-row justify-between items-center lg:py-[300px]">
+            <div>
+            <img  class="mx-auto" src="./assets/images/Fund.svg" alt="guru img">
+            </div>
+            <div class="flex flex-col mx-auto margin-0-auto gap-y-3">
+                <h3 class="text-[17px]">About mutual funds</h3>
+                <h2 class="text-[40px] font-bold">Learn with Fund Guru</h2>
+                <ul class="flex flex-col space-y-3">
+                    <li class="flex items-center space-x-5">
+                        <img src="./assets/images/ok.svg" alt="logo">
+                        <span class="text-[17px]">Mutual Funds-Introduction and Working</span>
+                    </li>
+                    <li class="flex items-center space-x-5">
+                        <img src="./assets/images/ok.svg" alt="logo">
+                        <span class="text-[17px]">Benefits of Investing in Mutual Funds</span>
+                    </li>
+                    <li class="flex items-center space-x-5">
+                        <img src="./assets/images/ok.svg" alt="logo">
+                        <span class="text-[17px]">Mutual Fund Schemes and Types</span>
+                    </li>
+                    <li class="flex items-center space-x-5">
+                        <img src="./assets/images/ok.svg" alt="logo">
+                        <span class="text-[17px]">Ways to Choose Mutual Fund Schemes</span>
+                    </li>
+                    <li class="flex items-center space-x-5">
+                        <img src="./assets/images/ok.svg" alt="logo">
+                        <span class="text-[17px]">Offer Documents and Statements</span>
+                    </li>
+                    <li class="flex items-center space-x-5">
+                        <img src="./assets/images/ok.svg" alt="logo">
+                        <span class="text-[17px]">Transactions in Mutual Funds</span>
+                    </li>
+                </ul>
+                <div class="flex gap-x-3">
+                        <button class="bg-[#00D09C] mt-10 flexc w-[163px] px-8 py-4 text-white rounded">Know More</button>
+                        <div class="flex mt-10 items-center gap-2">
+                            <a href="" class="text-[17px]  !text-[#00D09C]">Watch Video</a>
+                            <span><img src="./assets/images/play.svg" alt="play img"></span>
+                        </div>
                 </div>
             </div>
         </div>
-        
+    </section>
+    <!-- Ask expert -->
+<section class="max-w-[1850px] mx-auto bg-gradient-to-t from-[#FFFFFF] to-[#E4FAF4]"> 
+    <div class="lg:flex items-center justify-center lg:gap-[100px]">
+        <div class="flex flex-col ">
+            <h2 class="text-[40px] font-bold lg:pl-[0px] pl-[50px] px-[19px] mt-[35px]">Ask the Expert</h2>
+            <p class="lg:text-[17px] mt-2 lg:mt-8 px-[19px] pl-[50px] lg:ml-[-53px]">You can schedule a meeting with an expense manager</p>
 
-        <div class="w-1/2 flex justify-center ml-[-890px]">
-            <img src="./assets/images/Expert.png" alt="Expert" class="w-[400px] h-auto rounded-lg shadow-lg">
+            <div class="flex flex-col items-center mx-auto gap-6 lg:flex-row">
+                <div class="flex flex-col items-start gap-y-3 mt-12 ">
+                    <img class="bg-[#E8F9F5] rounded-md border w-[62px] h-[62px] p-4 border-[#00D09C]/20" src="./assets/images/cash.svg" alt="cash img">
+                    <h2 class="text-[24px] font-bold">Investing made easy</h2>
+                    <p class="w-[260px]">Three simple options- cautions, balanced, adventurous.<br>Expert will take care of rest!</p>
+                    <button class="bg-[#00D09C] mt-10 flexc w-[159px] px-8 py-4 text-white rounded text-[18px]">Invest Now</button>
+                </div>
+                <div class="flex flex-col items-start gap-y-3 mt-[44px]">
+                    <img class=" bg-[#E8F9F5] rounded-md border w-[62px] h-[62px] p-4 border-[#00D09C]/20" src="./assets/images/Schedule.svg" alt="schedule img">
+                    <h2 class="text-[24px] font-bold">Schedule a meeting</h2>
+                    <p class="w-[252px]">Expert will give you the best advice. Schedule a meeting with the expert to know mutual funds better.</p>
+                    <button class="bg-[#00D09C] mt-4 flexc w-[186px] px-8 py-4 text-white rounded text-[18px]">Schedule Now</button>
+                </div>
+            </div>
         </div>
+        <div>
+            <img src="./assets/images/Expert.png" alt="ask img"class="mx-auto mt-10 hidden lg:block">
+
+        </div>
+
     </div>
 </section>
+<section class="max-w-[1850px] mt-48 mx-auto bg-gradient-to-b from-[#FFFFFF] to-gray-50 pr-[33px] pl-[10px]">
+    <div class="flex flex-col items-center justify-center lg:mt-[20px] mt-[-124px] mb-3 relative">
+        <h2 class="text-[30px] text-center font-bold">Manage your Investment from your hand.</h2>
+        <p class="lg:text-[17px] text-[15px] w-[414px] text-center lg:mt-10 mt-[24px]">Now you will be at ease of investing, buying and<br>selling easier with just a click.</p>
+        <h2 class="text-[24px] lg:mt-10  mt-[112px] font-bold">Download the App now</h2>
+        <div class="flex justify-between lg:gap-4 gap-4 lg:mt-4 ml-[20px] mt-[20px]">
+          <button><img src="./assets/images/app.svg" alt="app img"></button>
+          <button><img src="./assets/images/app2.svg" alt="app2 img"></button>
+        </div>
+        <img src="./assets/images/chat.svg"alt="chat img" class=" absolute right-[-17.7px] top-[221px] lg:top-[200px] lg:right-[100px]">
 
-<!-- part-5 -->
-
-<section class="flex flex-col container mx-auto  items-center text-center mt-24 h-[498px]">
-    <h1 class="text-3xl font-semibold">Manage your Investment from your hand.</h1>
-    <p class="text-gray-600 mt-7 text-[20px] w-[414px]">Now you will be at ease of investing, buying and selling easier with just a click.</p>
-    <h2 class="text-2xl font-bold mt-14">Download the App now</h2>
-    <div class="flex items-center justify-center gap-6 mt-6">
-        <button><img src="./assets/images/app.svg" alt="App Store"></button>
-        <button><img src="./assets/images/app2.svg" alt="Google Play"></button>
-    </div>
-    <div class="mr-[-1103px] mt-[-66px]">
-        <img src="./assets/images/chat.svg" alt="Chat Icon" >
     </div>
 </section>
-
-<!-- part-6 -->
-
 <section class="bg-white py-10 container mx-auto relative">
     
     
-    <div class="container mx-auto px-12 flex justify-between mt-[-34px] shadow-[0_-10px_10px_-5px_rgba(128,128,128,0.3)]">
+    <div class="container mx-auto px-12 lg:flex hidden justify-between mt-[39px] shadow-[0_-10px_10px_-5px_rgba(128,128,128,0.3)]">
+    
         <div class=" ml-[-16px]">
             <img src="./assets/images/Group 19.png" alt="Neo Funds" class="w-[210px] h-[210px]">
             <h2 class="text-3xl ml-[77px] font-semibold mt-[-44px]">Neo Funds</h2>
@@ -257,9 +249,9 @@
         </div>
     </div>
 
-    <div class="mt-10 pt-4 flex justify-between border-t border-gray-200 px-12 text-gray-500 text-sm mb-5">
+    <div class="mt-10 pt-4 lg:flex hidden justify-between border-t border-gray-200 px-12 text-gray-500 text-sm mb-5">
         <p>Copyright 2019 Mutual Funds. All rights reserved.</p>
-        <div class="flex gap-4 mr-[194px]">
+        <div class="flex gap-4 mr-[30px]">
             <img src="./assets/images/social 1.svg" alt="Facebook">
             <img src="./assets/images/social 2.svg" alt="Instagram">
             <img src="./assets/images/social 4.svg" alt="Google">
@@ -269,6 +261,94 @@
 </section>
 
 
-</body>
-</html>
+<div class=" ml-[-54px] mt-[-63px] lg:hidden">
+    <img src="./assets/images/Group 19.png" alt="Neo Funds" class="w-[210px] h-[210px]">
+    <h2 class="text-2xl ml-[77px] font-semibold mt-[-44px]">Neo Funds</h2>
+</div>
 
+
+<div class="max-w-md mx-auto p-4 lg:hidden">
+    <div id="accordion-collapse" data-accordion="collapse">
+        <div class="border border-gray-300 rounded-md mb-2">
+            <h2>
+                <button class="flex items-center justify-between w-full p-4 text-lg font-medium text-gray-900" 
+                    data-accordion-target="#quick-links">
+                    <span>Quick Links</span>
+                    <span class="text-xl font-bold">+</span>
+                </button>
+            </h2>
+            <div id="quick-links" class="hidden p-4">
+                
+            </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-md mb-2">
+            <h2>
+                <button class="flex items-center justify-between w-full p-4 text-lg font-medium text-gray-900" 
+                    data-accordion-target="#top-funded">
+                    <span>Top Funded Houses</span>
+                    <span class="text-xl font-bold">+</span>
+                </button>
+            </h2>
+            <div id="top-funded" class="hidden p-4">
+          
+            </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-md mb-2">
+            <h2>
+                <button class="flex items-center justify-between w-full p-4 text-lg font-medium text-gray-900" 
+                    data-accordion-target="#resources">
+                    <span>Resources</span>
+                    <span class="text-xl font-bold">+</span>
+                </button>
+            </h2>
+            <div id="resources" class="hidden p-4">
+              
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="mt-6 text-center">
+        <div class="flex justify-between text-sm text-gray-700">
+            <div>
+                <h3 class="font-semibold text-left">Call Us At</h3>
+                <p class="mt-2.5">+91-8130813864</p>
+                <p>+91-8860039452</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-left">Write to us at</h3>
+                <p class="mt-2.5">contact@neofund.com</p>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="mt-6 text-center">
+        <h3 class="font-semibold">Download the App</h3>
+        <div class="flex justify-center gap-4 mt-2">
+            <img src="./assets/images/app3.svg" alt="Apple Store" class="w-8 h-8">
+            <img src="./assets/images/app4.svg" alt="Google Play" class="w-8 h-8">
+        </div>
+    </div>
+</div>
+
+<footer class="flex flex-col border-t border-gray-200 px-12 text-gray-500 mb-4.5 lg:hidden">
+    <div class="flex items-center justify-center gap-x-2 mt-4">
+        <img src="./assets/images/social 1.svg" alt="fb">
+        <img src="./assets/images/social 2.svg" alt="insta">
+        <img src="./assets/images/social 4.svg" alt="google">
+        <img src="./assets/images/social 3.svg" alt="twit">
+    </div>
+    <div>
+        <p class="text-[10px] mt-3 text-center">Copyright 2019 Mutual Funds. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+
+
+</body>
+</html>   
